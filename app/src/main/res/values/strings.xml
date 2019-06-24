@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Eindwerk</string>
+    <string name="soorten">Choose</string>
+    <string name="menu_item1">uitloggen</string>
+
+    <string name="title_activity_test_of_het_werkt">TestOfHetWerkt</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string-array name="description_arrays">
+        <item>knippen</item>
+        <item>kleuren</item>
+        <item>permanent</item>
+    </string-array>
+    <string name="google_maps_api_key">AIzaSyBjuE712VmcYYkrG98sN1f-Dv--cLldWMI</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

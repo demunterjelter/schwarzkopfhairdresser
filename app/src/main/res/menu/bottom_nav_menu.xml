@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:title="Home"
+            android:id="@+id/navigation_home"
+            android:icon="@drawable/ic_home"
+            android:checked="true"
+    />
+    <item
+            android:title="Products"
+            android:id="@+id/navigation_products"
+            android:icon="@drawable/ic_soap"
+    />
+
+    <item
+            android:title="Order"
+            android:id="@+id/navigation_order"
+            android:icon="@drawable/ic_box"
+    />
+    <item
+            android:title="Orderlist"
+            android:id="@+id/navigation_orderlist"
+            android:icon="@drawable/ic_list"/>
+    <item
+            android:title="Appointment"
+            android:id="@+id/navigation_appointment"
+            android:icon="@drawable/ic_appointment"
+    />
+</menu>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "188481325094",
+    "firebase_url": "https://eindwerk-a83fe.firebaseio.com",
+    "project_id": "eindwerk-a83fe",
+    "storage_bucket": "eindwerk-a83fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188481325094:android:cffb023fb31a91dd",
+        "android_client_info": {
+          "package_name": "com.realdolmen.eindwerk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "188481325094-qm04niothcdup7v1tuprgd2n7bqkmbq6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEshJm_UiRjKIbjYRJZdmLcqdmsXdjzAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "188481325094-qm04niothcdup7v1tuprgd2n7bqkmbq6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

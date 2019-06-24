@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+            android:layout_width="395dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.026">
+        <LinearLayout android:orientation="vertical"
+                      android:gravity="start"
+                      android:layout_gravity="center"
+                      android:layout_margin="8dp"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:padding="16dp">
+                <TextView android:id="@+id/tv_email"
+                          android:text="email"
+                          android:textSize="12sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="150dp"
+                          android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tv_email_amount"
+                          android:text="aantal"
+                          android:textSize="12sp"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="150dp"
+                          android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:padding="16dp">
+                <TextView android:id="@+id/tv_firstname_orderList"
+                          android:text="firstname"
+                          android:textSize="12sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="150dp"
+                          android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tv_firstname_orderList_amount"
+                          android:text="aantal"
+                          android:textSize="12sp"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="100dp"
+                          android:layout_height="wrap_content"/>
+                <Button android:id="@+id/btn_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="delete"
+                        android:textColor="@color/colorAccent"
+                        android:background="@color/colorPrimary"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:padding="16dp">
+                <TextView android:id="@+id/tv_lastname_orderList"
+                          android:text="lastname"
+                          android:textSize="12sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="150dp"
+                          android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tv_lastname_orderList_amount"
+                          android:text="aantal"
+                          android:textSize="12sp"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="100dp"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:padding="16dp">
+                <TextView android:id="@+id/tv_instant_blush"
+                          android:text="instant blush"
+                          android:textSize="12sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="150dp"
+                          android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tv_instant_blush_amount"
+                          android:text="aantal"
+                          android:textSize="12sp"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="60dp"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:padding="16dp">
+                <TextView android:id="@+id/tv_blush_wash"
+                          android:text="blush wash"
+                          android:textSize="12sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="150dp"
+                          android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tv_blush_wash_amount"
+                          android:text="aantal"
+                          android:textSize="12sp"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="60dp"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:padding="16dp">
+                <TextView android:id="@+id/tv_keratin_restore_mask"
+                          android:text="keratin restore mask"
+                          android:textSize="12sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="150dp"
+                          android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tv_keratin_restore_mask_amount"
+                          android:text="aantal"
+                          android:textSize="12sp"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="60dp"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:padding="16dp">
+                <TextView android:id="@+id/tv_keratin_restore_shampoo"
+                          android:text="keratin restore shampoo"
+                          android:textSize="12sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="150dp"
+                          android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tv_keratin_restore_shampoo_amount"
+                          android:text="aantal"
+                          android:textSize="12sp"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="60dp"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:padding="16dp">
+                <TextView android:id="@+id/tv_threed_men_hair_shampoo"
+                          android:text="3d men and hair shampoo"
+                          android:textSize="12sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="150dp"
+                          android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tv_threed_men_hair_shampoo_amount"
+                          android:text="aantal"
+                          android:textSize="12sp"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="60dp"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:padding="16dp">
+                <TextView android:id="@+id/tv_threed_men_molding_wax"
+                          android:text="3d men holding wax"
+                          android:textSize="12sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="150dp"
+                          android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tv_threed_men_molding_wax_amount"
+                          android:text="aantal"
+                          android:textSize="12sp"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="60dp"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:padding="16dp">
+                <TextView android:id="@+id/tv_threed_men_strong_hold_gel"
+                          android:text="3d men strong hold gel"
+                          android:textSize="12sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="150dp"
+                          android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tv_threed_men_strong_hold_gel_amount"
+                          android:text="aantal"
+                          android:textSize="12sp"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="60dp"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:padding="16dp">
+                <TextView android:id="@+id/tv_treatment"
+                          android:text="treatment"
+                          android:textSize="12sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="150dp"
+                          android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tv_treatment_amount"
+                          android:text="aantal"
+                          android:textSize="12sp"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="60dp"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:padding="16dp">
+                <TextView android:id="@+id/tv_vibrant_red_micellar_shampoo"
+                          android:text="vibrant red micellar shampoo"
+                          android:textSize="12sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="150dp"
+                          android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tv_vibrant_red_micellar_shampoo_amount"
+                          android:text="aantal"
+                          android:textSize="12sp"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="60dp"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:padding="16dp">
+                <TextView android:id="@+id/tv_xxl_rich_micellar_shampoo"
+                          android:text="xxl rich micellar shampoo"
+                          android:textSize="12sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="150dp"
+                          android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tv_xxl_rich_micellar_shampoo_amount"
+                          android:text="aantal"
+                          android:textSize="12sp"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="60dp"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:padding="16dp">
+                <TextView android:id="@+id/tv_repair_rescue_micellar_shampoo"
+                          android:text="repair rescue micellar shampoo"
+                          android:textSize="12sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="150dp"
+                          android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tv_repair_rescue_micellar_shampoo_amount"
+                          android:text="aantal"
+                          android:textSize="12sp"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="60dp"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:padding="16dp">
+                <TextView android:id="@+id/tv_repair_rescue_treatment"
+                          android:text="repair rescue treatment"
+                          android:textSize="12sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="150dp"
+                          android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tv_repair_rescue_treatment_amount"
+                          android:text="aantal"
+                          android:textSize="12sp"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="60dp"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:padding="16dp">
+                <TextView android:id="@+id/tv_repair_rescue_xxl_sealed_ends"
+                          android:text="repair rescue xxl sealed ends"
+                          android:textSize="12sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="150dp"
+                          android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tv_repair_rescue_xxl_sealed_ends_amount"
+                          android:text="aantal"
+                          android:textSize="12sp"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="60dp"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:padding="16dp">
+                <TextView android:id="@+id/tv_moisture_kick_micellar_cleansing_conditioner"
+                          android:text="moisture kick cleansing conditioner"
+                          android:textSize="12sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="150dp"
+                          android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tv_moisture_kick_micellar_cleansing_conditioner_amount"
+                          android:text="aantal"
+                          android:textSize="12sp"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="60dp"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:padding="16dp">
+                <TextView android:id="@+id/tv_moisture_kick_micellar_shampoo"
+                          android:text="moisture kick micellar shampoo"
+                          android:textSize="12sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="150dp"
+                          android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tv_moisture_kick_micellar_shampoo_amount"
+                          android:text="aantal"
+                          android:textSize="12sp"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="60dp"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:padding="16dp">
+                <TextView android:id="@+id/tv_moisture_kick_treatment"
+                          android:text="moisture_kick_treatment"
+                          android:textSize="12sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="150dp"
+                          android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tv_moisture_kick_treatment_amount"
+                          android:text="aantal"
+                          android:textSize="12sp"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_width="60dp"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
