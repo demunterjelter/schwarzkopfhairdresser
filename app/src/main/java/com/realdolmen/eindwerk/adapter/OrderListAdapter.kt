@@ -77,8 +77,8 @@ class OrderListAdapter(private val list: ArrayList<Order>, private val context: 
             val db = FirebaseFirestore.getInstance()
             val collection = db.collection("users")
 
-            val thrashButton: Button = itemView.findViewById(R.id.btn_delete) as Button
-
+            // val thrashButton: Button = itemView.findViewById(R.id.btn_delete) as Button
+/*
             thrashButton.setOnClickListener {
                 val deleteAlert = AlertDialog.Builder(context)
                 deleteAlert.setTitle("Delete object")
@@ -106,7 +106,7 @@ class OrderListAdapter(private val list: ArrayList<Order>, private val context: 
                 }
                 alertDialog.window?.setBackgroundDrawableResource(R.color.colorPrimaryDark)
 
-            }
+            }*/
 
             //--------------------------------------------------------
 

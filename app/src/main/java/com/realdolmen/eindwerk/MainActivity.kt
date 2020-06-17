@@ -17,8 +17,17 @@ import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
 import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
+import com.karumi.dexter.Dexter
+import com.karumi.dexter.MultiplePermissionsReport
+import com.karumi.dexter.PermissionToken
+import com.karumi.dexter.listener.PermissionDeniedResponse
+import com.karumi.dexter.listener.PermissionGrantedResponse
+import com.karumi.dexter.listener.PermissionRequest
+import com.karumi.dexter.listener.multi.MultiplePermissionsListener
+import com.karumi.dexter.listener.single.PermissionListener
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_register.*
+import java.util.jar.Manifest
 
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -36,8 +45,32 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        initialise()
+Dexter.withActivity(this)
+    .withPermissions(android.Manifest.permission.READ_CALENDAR,
+                    android.Manifest.permission.WRITE_CALENDAR)
+    .withListener(object : MultiplePermissionsListener {
+        override fun onPermissionsChecked(report: MultiplePermissionsReport?) {
+            initialise()//in voorbeeld doen ze de intent naar de homepagina
+            initialiseFirebase()
+        }
 
+        override fun onPermissionRationaleShouldBeShown(
+            permissions: MutableList<PermissionRequest>?,
+            token: PermissionToken?
+        ) {
+            TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        }
+    }
+    ).check()
+
+        /* dees is originele plek en firebase zat niet in een functie
+                        initialise()
+                */
+
+
+
+    }
+    private fun initialiseFirebase(){
         FirebaseApp.initializeApp(this)
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestEmail()
@@ -48,7 +81,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         signIn.setOnClickListener(this)
         //signOut.setOnClickListener(this)
     }
-
     override fun onClick(v: View?) {
         when (v!!.id) {
             R.id.sign_in_button -> signIn()
@@ -135,3 +167,4 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
 
 }
+

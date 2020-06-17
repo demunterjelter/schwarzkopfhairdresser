@@ -15,5 +15,13 @@
     </string-array>
     <string name="google_maps_api_key">AIzaSyBjuE712VmcYYkrG98sN1f-Dv--cLldWMI</string>
     <string name="title_activity_maps">Map</string>
+    <string name="address_bullet">\u2022 Adres:</string>
+    <string name="time_bullet">\u2022 Tijd:</string>
+    <string name="stylelist_bullet">\u2022 StyleList:</string>
+    <string name="bullet">\u2022</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>

@@ -2,21 +2,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.realdolmen.eindwerk">
 
-
-
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
 
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
-            android:label="Kapsalon Cathy"
+            android:label="Schwarzkopf Hairdresser"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-
-
-
-
+        <activity android:name=".MailActivity">
+        </activity>
+        <activity android:name=".Main2Activity">
+        </activity>
         <activity android:name=".AppointmentActivity">
         </activity>
         <activity android:name=".OrderListActivity">

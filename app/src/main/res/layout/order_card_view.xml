@@ -55,12 +55,7 @@
                           android:textColor="@color/colorPrimary"
                           android:layout_width="100dp"
                           android:layout_height="wrap_content"/>
-                <Button android:id="@+id/btn_delete"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="delete"
-                        android:textColor="@color/colorAccent"
-                        android:background="@color/colorPrimary"/>
+
 
             </LinearLayout>
             <LinearLayout android:layout_width="match_parent"

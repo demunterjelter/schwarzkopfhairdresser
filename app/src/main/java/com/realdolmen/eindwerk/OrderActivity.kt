@@ -10,6 +10,7 @@ import android.widget.Toast
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import com.realdolmen.eindwerk.data.Common
 import kotlinx.android.synthetic.main.activity_home_page.nav_view
 import kotlinx.android.synthetic.main.activity_order.*
 
@@ -134,8 +135,15 @@ class OrderActivity : AppCompatActivity() {
 
         }
 
-
-        if (tv_emailEdit.text.toString() == userThatIsLoggedIn) {
+        if (tv_emailEdit.text.toString() == "vanderguchtcathy@hotmail.com")
+        {
+            Common.TO = "schwarzkopf.leverancier@hotmail.com"
+            Common.SUBJECT = "bestelling producten"
+            Common.MESSAGE = order.toString()
+            val intent = Intent(this, MailActivity::class.java)
+            startActivity(intent)
+        }
+        else if (tv_emailEdit.text.toString() == userThatIsLoggedIn) {
             val intent = Intent(this, OrderListActivity::class.java)
             intent.action = Intent.ACTION_SEND
             intent.type = "text/plain"
